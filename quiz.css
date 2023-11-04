@@ -147,7 +147,7 @@ input[type="radio"] {
     align:center;
     font-size: 230%;
     width:15%;
-    height: 5%;/* 입력 필드의 너비를 조정하려면 이 값을 변경하세요 */
+    height: 2%;/* 입력 필드의 너비를 조정하려면 이 값을 변경하세요 */
 }
     #results {
         font-size: 500%; /* 원하는 폰트 크기로 변경 */
