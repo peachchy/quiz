@@ -1,0 +1,162 @@
+body {
+    background-color: #f4f4f4;
+    padding: 50px;
+    color: black;
+}
+body, button, input, label, p {
+    color: black; /* 글자 색상을 검은색으로 설정 */
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    text-align: center;
+    vertical-align: center;
+}
+footer{
+    color: black;
+    font-family: 'LINESeedKR-Bd';
+    font-size: 130%;
+}
+#gif-image {
+    width: 600px;
+    height: auto;
+}
+#button-container {
+    display: flex;
+    justify-content: center;
+    }
+
+.global-nav-item {
+    color: black; /* 원하는 색상으로 변경 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-size: 160%;
+    font-family: 'LINESeedKR-Bd';
+    margin: 5px;
+}
+
+
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff'),
+    url(강원교육새음.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+#quiz-container {
+    background-color: rgba(255, 255, 255, 1.0); /*맨 마지막 부분 조절하면 불투명도*/
+    padding: 30px;
+    border-radius: 15px;
+    height: 1150px;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-size: 230%;
+}
+
+
+#question {
+    margin-bottom: 10px;
+    font-size: 300%; /* 문제의 폰트 크기를 24px로 설정 */
+}
+
+#choices label {
+    font-size: 250%; /* 선택지의 폰트 크기를 18px로 설정 */
+}
+
+#explanation {
+    font-size: 250%; /* explanation의 폰트 크기를 20px로 설정 */
+    margin-top: 10px;
+}
+
+#feedback {
+    font-size: 250%; /* feedback의 폰트 크기를 18px로 설정 */
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#text-answer {
+    padding: 10px 10px;
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align:center;
+    font-size: 250%;
+    width: 100px;/* 입력 필드의 너비를 조정하려면 이 값을 변경하세요 */
+}
+
+
+input[type="radio"] {
+    transform: scale(1.5); /* 요소의 크기를 1.5배로 확대 */
+}
+
+#results {
+    background-color: rgba(255, 255, 255, 1.0); /*맨 마지막 부분 조절하면 불투명도*/
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 20px;
+        font-size: 8px; /* 원하는 폰트 크기로 변경 */
+    }
+    #quiz-container {
+        padding: 10px;
+    }
+    button {
+        padding: 5px 5px;
+        font-size: 230%;
+        margin: 5px;
+    }
+    .global-nav-item {
+        font-size: 110%; /* 원하는 폰트 크기로 변경 */
+    }
+    footer {
+        font-size: 85%; /* 원하는 폰트 크기로 변경 */
+    }
+    #question {
+        font-size: 250%; /* 원하는 폰트 크기로 변경 */
+    }
+    #choices label {
+        font-size: 230%; /* 원하는 폰트 크기로 변경 */
+    }
+    #explanation {
+        font-size: 230%; /* 원하는 폰트 크기로 변경 */
+    }
+    #feedback {
+        font-size: 230%; /* 원하는 폰트 크기로 변경 */
+    }
+    #text-answer {
+    padding: 10px 10px;
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align:center;
+    font-size: 230%;
+    width:15%;
+    height: 5%;/* 입력 필드의 너비를 조정하려면 이 값을 변경하세요 */
+}
+    #results {
+        font-size: 500%; /* 원하는 폰트 크기로 변경 */
+    }
+    input[type="radio"] {
+    transform: scale(0.8); /* 요소의 크기를 1.5배로 확대 */
+    }
+    #gif-image {
+    width: 250px;
+    height: auto;
+    }
+}
