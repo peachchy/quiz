@@ -1,11 +1,23 @@
 body {
-    background-image: url('Onew_WebsiteDesign_01.jpg');
-    background-size: 100%;
+    overflow:auto;
     background-repeat: no-repeat;
     background-position: top center; /* 맨 위부터 시작하도록 설정 */
     padding: 50px;
     color: black;
 }
+
+#background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    z-index: -1;
+}
+
+
+
 body, button, input, label, p {
     color: black; /* 글자 색상을 검은색으로 설정 */
     font-family: 'GangwonEduSaeeum_OTFMediumA';
@@ -13,23 +25,26 @@ body, button, input, label, p {
     vertical-align: center;
 }
 footer{
-    color: black;
+    color: white;
     font-family: 'LINESeedKR-Bd';
-    font-size: 130%;
+    font-size: 230%;
 }
 #gif-image {
-    width: 600px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    width: 80%;
     height: auto;
 }
 #button-container {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     }
 
 .global-nav-item {
-    color: black; /* 원하는 색상으로 변경 */
+    color: #ff3670; /* 원하는 색상으로 변경 */
     text-decoration: none; /* 밑줄 제거 */
-    font-size: 160%;
+    font-size: 250%;
     font-family: 'LINESeedKR-Bd';
     margin: 5px;
 }
@@ -52,34 +67,35 @@ footer{
     background-color: rgba(255, 255, 255, 1.0); /*맨 마지막 부분 조절하면 불투명도*/
     padding: 30px;
     border-radius: 15px;
-    height: 1150px;
+    height: 3400px;
 }
 
 
 button {
     margin-top: 20px;
     padding: 10px 10px;
-    font-size: 230%;
+    font-size: 550%;
 }
 
 
 #question {
+    margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 300%; /* 문제의 폰트 크기를 24px로 설정 */
+    font-size: 650%; /* 문제의 폰트 크기를 24px로 설정 */
 }
 
 #choices label {
-    font-size: 250%; /* 선택지의 폰트 크기를 18px로 설정 */
+    font-size: 550%; /* 선택지의 폰트 크기를 18px로 설정 */
 }
 
 #explanation {
-    font-size: 250%; /* explanation의 폰트 크기를 20px로 설정 */
+    font-size: 550%; /* explanation의 폰트 크기를 20px로 설정 */
     margin-top: 10px;
 }
 
 #feedback {
-    font-size: 250%; /* feedback의 폰트 크기를 18px로 설정 */
-    margin-top: 15px;
+    font-size: 550%; /* feedback의 폰트 크기를 18px로 설정 */
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 #text-answer {
@@ -89,13 +105,14 @@ button {
     margin-left: auto;
     margin-right: auto;
     align:center;
-    font-size: 250%;
-    width: 100px;/* 입력 필드의 너비를 조정하려면 이 값을 변경하세요 */
+    font-size: 550%;
+    width: 250px;/* 입력 필드의 너비를 조정하려면 이 값을 변경하세요 */
 }
 
 
 input[type="radio"] {
-    transform: scale(1.5); /* 요소의 크기를 1.5배로 확대 */
+    transform: scale(3); /* 요소의 크기를 1.5배로 확대 */
+    vertical-align: middle;
 }
 
 #results {
@@ -112,7 +129,9 @@ input[type="radio"] {
 
 @media (max-width: 400px) {
     body {
+        height: 100vh;
         background-image: url('Onew_WebsiteDesign_01.jpg');
+        background-color: #92bb81;
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: top center; /* 맨 위부터 시작하도록 설정 */
@@ -120,30 +139,32 @@ input[type="radio"] {
         font-size: 8px; /* 원하는 폰트 크기로 변경 */
     }
     #quiz-container {
+        height: 95vh;
         padding: 10px;
     }
     button {
-        padding: 5px 5px;
-        font-size: 230%;
-        margin: 5px;
+        margin-top: -50px;
+        font-size: 280%;
     }
     .global-nav-item {
         font-size: 110%; /* 원하는 폰트 크기로 변경 */
     }
     footer {
-        font-size: 85%; /* 원하는 폰트 크기로 변경 */
+        font-size: 80%; /* 원하는 폰트 크기로 변경 */
     }
     #question {
-        font-size: 250%; /* 원하는 폰트 크기로 변경 */
+        margin-top: 30px;
+        font-size: 300%; /* 원하는 폰트 크기로 변경 */
     }
     #choices label {
-        font-size: 230%; /* 원하는 폰트 크기로 변경 */
+        margin-bottom: -150px;
+        font-size: 280%; /* 원하는 폰트 크기로 변경 */
     }
     #explanation {
-        font-size: 230%; /* 원하는 폰트 크기로 변경 */
+        font-size: 280%; /* 원하는 폰트 크기로 변경 */
     }
     #feedback {
-        font-size: 230%; /* 원하는 폰트 크기로 변경 */
+        font-size: 280%; /* 원하는 폰트 크기로 변경 */
     }
     #text-answer {
     padding: 10px 10px;
@@ -152,7 +173,7 @@ input[type="radio"] {
     margin-left: auto;
     margin-right: auto;
     align:center;
-    font-size: 230%;
+    font-size: 280%;
     width:15%;
     height: 2%;/* 입력 필드의 너비를 조정하려면 이 값을 변경하세요 */
 }
@@ -161,9 +182,11 @@ input[type="radio"] {
     }
     input[type="radio"] {
     transform: scale(0.8); /* 요소의 크기를 1.5배로 확대 */
+    vertical-align: middle;
     }
     #gif-image {
     width: 250px;
     height: auto;
+    margin-bottom: 30px;
     }
 }
