@@ -3,12 +3,12 @@ var numCorrect = 0; // 정답 수를 저장할 변수 추가
 
 var myQuestions = [
   {
-    question: "다음 중 진기의 습관이 아닌 것은?",
+    question: "문제 1",
     answers: {
-      a: ' 손 긁기',
-      b: ' 펭귄 인사',
-      c: ' 뽀뽀',
-      d: ' 애교'
+      a: ' 선택지 1',
+      b: ' 선택지 2',
+      c: ' 선택지 3',
+      d: ' 선택지 4'
     },
     correctAnswer: 'c',
     explanation: {
@@ -18,8 +18,8 @@ var myQuestions = [
     type: 'multipleChoice' // 문제 타입 추가
   },
   {
-    question: "진기의 습관은?",
-    correctAnswer: '뽀뽀',
+    question: "문제 2",
+    correctAnswer: '단답',
     explanation: '',
     type: 'shortAnswer'
   },
