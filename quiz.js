@@ -169,7 +169,7 @@ function checkAnswer() {
     numCorrect++; // 정답을 맞췄을 때, 정답 수를 증가
 
     // 정답을 맞췄을 때 이미지 변경
-    document.getElementById('gif-image').src = 'IMG_5494.gif';  // 'correct_answer.gif'를 실제 이미지 파일 경로로 변경
+    document.getElementById('gif-image').src = 'correct.gif';  // 'correct_answer.gif'를 실제 이미지 파일 경로로 변경
   } else {
     if (question.type === 'multipleChoice') {
       var correctAnswerText = question.answers[question.correctAnswer];
@@ -179,7 +179,7 @@ function checkAnswer() {
     }
 
     // 정답을 틀렸을 때 이미지 변경
-    document.getElementById('gif-image').src = 'IMG_6367 2.gif';  // 'incorrect_answer.gif'를 실제 이미지 파일 경로로 변경
+    document.getElementById('gif-image').src = 'wrong.gif';  // 'incorrect_answer.gif'를 실제 이미지 파일 경로로 변경
   }
 
   // 다음 버튼과 설명을 보이게 함
